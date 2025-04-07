@@ -11,7 +11,7 @@ export const PrivacyText = ({ policyLink, termsLink, textSize = 18 }) => {
                 </Link>
                 .
             </Typography>
-            <Typography variant="body2" color="rgba(255, 255, 255, 0.7)" sx={{ mt: 1, fontSize: textSize }}>
+            <Typography variant="body2" color="rgba(255, 255, 255, 0.7)" sx={{ mt: 1, fontSize: textSize - 4 }}>
                 This site is protected by reCAPTCHA and the Google Privacy Policy and{' '}
                 <Link href={termsLink} color="inherit" sx={{ fontWeight: 600, textDecoration: 'underline' }}>
                     Terms of Service

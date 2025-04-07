@@ -1,14 +1,20 @@
-import {Typography, useMediaQuery} from "@mui/material";
+import { Typography, useMediaQuery } from "@mui/material";
 import FormTextField from "./FormTextField.jsx";
 import PrimaryButton from "../Buttons/PrimaryButton.jsx";
 import PrivacyText from "../Text/PrivacyText.jsx";
-import {FormContainer} from "./FormContainer.jsx";
-import {theme} from "../../theme/theme.js";
-import Glow from "../Effects/Glow.jsx";
+import { FormContainer } from "./FormContainer.jsx";
+import { theme } from "../../theme/theme.js";
 
 const FormComponent = () => {
     const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
     const isTablet = useMediaQuery(theme.breakpoints.between('sm', 'md'));
+
+    const labelStyle = {
+        fontSize: isMobile ? 14 : 16,
+        fontWeight: 500,
+        mb: 0,
+        mt: 0,
+    };
 
     return (
         <FormContainer>
@@ -23,43 +29,43 @@ const FormComponent = () => {
                 Get your free compliance guide
             </Typography>
 
+            <Typography sx={labelStyle}>First name</Typography>
             <FormTextField
-                label="First name"
                 placeholder="John"
                 fullWidth
-                margin="normal"
+                margin="dense"
                 size={isMobile ? "small" : "medium"}
             />
 
+            <Typography sx={labelStyle}>Last name</Typography>
             <FormTextField
-                label="Last name"
                 placeholder="Doe"
                 fullWidth
-                margin="normal"
+                margin="dense"
                 size={isMobile ? "small" : "medium"}
             />
 
+            <Typography sx={labelStyle}>Email address</Typography>
             <FormTextField
-                label="Email Address"
                 placeholder="you@company.com"
                 type="email"
                 fullWidth
-                margin="normal"
+                margin="dense"
                 size={isMobile ? "small" : "medium"}
             />
 
+            <Typography sx={labelStyle}>Company</Typography>
             <FormTextField
-                label="Company"
                 placeholder="Enter company name"
                 fullWidth
-                margin="normal"
+                margin="dense"
                 size={isMobile ? "small" : "medium"}
             />
 
             <PrimaryButton
                 type="submit"
                 sx={{
-                    mt: 1,
+                    mt: 3,
                     width: '100%'
                 }}
             >
@@ -75,4 +81,5 @@ const FormComponent = () => {
         </FormContainer>
     );
 }
+
 export default FormComponent;

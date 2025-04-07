@@ -38,11 +38,12 @@ export const ComplianceGuideFeatures = () => {
 
     return (
         <Box sx={{
-            backgroundColor: '#121418',
-            minHeight: '100vh',
-            py: { xs: 4, sm: 6, md: 8 },
+            backgroundColor: '#1a1b21',
+            py: { xs: 4, sm: 6, md: 10 },
+            padding: "10px",
+            width: "100%",
         }}>
-            <Container sx={{paddingLeft: 0, paddingRight: 0}} maxWidth="lg">
+            <Container sx={{ px: 0, p: "0 65px" }} maxWidth="lg">
                 {/* Main Heading and Description */}
                 <Box sx={{ mb: { xs: 5, md: 7 } }}>
                     <Typography
@@ -61,7 +62,7 @@ export const ComplianceGuideFeatures = () => {
                         sx={{
                             color: 'rgba(255, 255, 255, 0.8)',
                             fontSize: isMobile ? '15px' : '16px',
-                            maxWidth: '900px',
+                            maxWidth: '100%',
                             lineHeight: 1.6,
                         }}
                     >
@@ -70,9 +71,9 @@ export const ComplianceGuideFeatures = () => {
                 </Box>
 
                 {/* Features Grid */}
-                <Grid container spacing={4}>
+                <Grid container rowSpacing={5} columnSpacing={5}>
                     {features.map((feature, index) => (
-                        <Grid item key={index} xs={12} md={6} lg={4}>
+                        <Grid item size={{ xs: 12, sm: 4, md: 4 }} key={index}>
                             <FeatureItem
                                 title={feature.title}
                                 description={feature.description}
@@ -89,8 +90,13 @@ export const ComplianceGuideFeatures = () => {
                 }}>
                     <ReportButton
                         variant="contained"
-                        fullWidth={isMobile}
+                        fullWidth
+
                         size={isMobile ? "medium" : "large"}
+                        sx={{
+                            mt: { xs: 3, md: 5 },
+                            px: isMobile ? 2 : 4,
+                        }}
                     >
                         Get Free Report
                     </ReportButton>

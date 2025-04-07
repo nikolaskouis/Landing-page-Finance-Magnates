@@ -23,65 +23,64 @@ const ComplianceSignupForm = () => {
         >
             <Container
                 maxWidth={false}
+                sx={{paddingTop: "100px"}}
                 //disableGutters
             >
-            <Grid
-                container
-                spacing={isMobile ? 4 : 8}
-                alignItems="center"
-                justifyContent="space-evenly"
-                // sx={{ maxWidth: 1200, mx: 'auto' }}
-            >
-                {/* LEFT SIDE – Title + Description */}
-                <Grid item xs={12} md={6} maxWidth="636px">
-                    <Typography
-                        variant="h2"
-                        sx={{
-                            fontWeight: 600,
-                            fontSize: isMobile ? '3rem' : '4rem',
-                            mb: 2,
-                            color: '#fff',
-                            lineHeight: 1.2,
-                            textAlign: 'left',
-                        }}
-                    >
-                        Stay Informed.<br />Stay Compliant.
-                    </Typography>
+                <Grid
+                    container
+                    spacing={isMobile ? 4 : 8}
+                    alignItems="center"
+                    justifyContent="space-evenly"
+                    //sx={{ maxWidth: 1200, mx: 'auto' }}
+                >
+                    {/* LEFT SIDE – Title + Description */}
+                    <Grid item size={{ xs:12, sm: 12, md:6 }} maxWidth="636px">
+                        <Typography
+                            variant="h2"
+                            sx={{
+                                fontWeight: 600,
+                                fontSize: isMobile ? '3rem' : '4rem',
+                                mb: 2,
+                                color: '#fff',
+                                lineHeight: 1.2,
+                                textAlign: 'left',
+                            }}
+                        >
+                            Stay Informed.<br />Stay Compliant.
+                        </Typography>
 
-                    <Typography
-                        variant="body1"
-                        sx={{
-                            mb: 4,
-                            color: '#fff',
-                            fontSize: '1.5rem',
-                            lineHeight: 1.6,
-                            textAlign: 'left',
-                        }}
-                    >
-                        Sign up to access the latest Insights on Regulatory Highlights, Recent Developments, and Future Outlook—all in one monthly report.
-                    </Typography>
+                        <Typography
+                            variant="body1"
+                            sx={{
+                                mb: 4,
+                                color: '#fff',
+                                fontSize: '1.5rem',
+                                lineHeight: 1.6,
+                                textAlign: 'left',
+                            }}
+                        >
+                            Sign up to access the latest Insights on Regulatory Highlights, Recent Developments, and Future Outlook—all in one monthly report.
+                        </Typography>
+                    </Grid>
+
+                    {/* RIGHT SIDE – Form */}
+                    <Grid>
+                        <Glow />
+                        <Box
+                            sx={{
+                                p: 4,
+                                px: 0,
+                                borderRadius: 2,
+                                maxWidth: 576,
+                                mx: isMobile ? 'auto' : 'inherit',
+                                position: 'relative',
+                                overflow: 'hidden',
+                            }}
+                        >
+                            <FormComponent />
+                        </Box>
+                    </Grid>
                 </Grid>
-
-                {/* RIGHT SIDE – Form */}
-                <Grid item xs={12} md={6}>
-                    <Glow />
-                    <Box
-                        sx={{
-                            p: 4,
-                            borderRadius: 2,
-                            maxWidth: 576,
-                            mx: isMobile ? 'auto' : 'inherit',
-                            position: 'relative',
-                            overflow: 'hidden',
-                        }}
-                    >
-
-                        <FormComponent />
-
-                    </Box>
-
-                </Grid>
-            </Grid>
             </Container>
         </Box>
     );

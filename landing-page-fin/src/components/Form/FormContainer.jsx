@@ -1,12 +1,33 @@
 import {Box, styled} from "@mui/material";
 
 export const FormContainer = styled(Box)(({ theme }) => ({
-    backgroundColor: 'rgb(26,27,33)',
-    border: "1px solid",
-    borderImage: "linear-gradient(90deg, #F6F361, #A363FF) 1",
-    boxShadow: '0 8px 32px rgba(0, 0, 0, 0.2)',
-    color: '#fff',
+    position: 'relative',
     zIndex: 3,
+    borderRadius: '24px !important',
+    padding: theme.spacing(4),
+    backgroundColor: 'rgb(26,27,33)',
+    color: '#fff',
+    boxShadow: '0 8px 32px rgba(0, 0, 0, 0.2)',
+    overflow: 'hidden',
+
+    // Pseudo-element for gradient border
+    '&::before': {
+        content: '""',
+        position: 'absolute',
+        top: 0,
+        left: 0,
+        right: 0,
+        bottom: 0,
+        padding: '1.5px',
+        borderRadius: '25px',
+        background: 'linear-gradient(90deg, rgba(246, 243, 97, 0.6), rgba(163, 99, 255, 0.8))',
+        WebkitMask:
+            'linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)',
+        WebkitMaskComposite: 'xor',
+        maskComposite: 'exclude',
+        pointerEvents: 'none',
+        zIndex: -1,
+    },
 
     // Responsive styling for different breakpoints
     [theme.breakpoints.down('sm')]: { // Mobile
