@@ -1,6 +1,6 @@
 // Button Component
 import {Button as MuiButton, styled, useMediaQuery} from '@mui/material';
-import {theme} from "../../constants/theme.js";
+import {theme} from "../../theme/theme.js";
 
 const StyledButton = styled(MuiButton)(({ theme }) => ({
     padding: '12px 24px',

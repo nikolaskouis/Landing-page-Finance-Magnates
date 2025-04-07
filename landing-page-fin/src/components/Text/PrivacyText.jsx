@@ -1,9 +1,9 @@
 // Privacy Policy Text Component
-import {Link, Typography} from "@mui/material";
+import {Box, Link, Typography} from "@mui/material";
 
-export const PrivacyText = ({ policyLink, termsLink, textSize = 14 }) => {
+export const PrivacyText = ({ policyLink, termsLink, textSize = 18 }) => {
     return (
-        <>
+        <Box sx={{textAlign: "left" }}>
             <Typography variant="body2" color="rgba(255, 255, 255, 0.7)" sx={{ mt: 2, fontSize: textSize }}>
                 By submitting this form, you agree to our{' '}
                 <Link href={policyLink} color="inherit" sx={{ fontWeight: 600, textDecoration: 'underline' }}>
@@ -18,7 +18,7 @@ export const PrivacyText = ({ policyLink, termsLink, textSize = 14 }) => {
                 </Link>{' '}
                 apply.
             </Typography>
-        </>
+        </Box>
     );
 };
 

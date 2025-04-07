@@ -1,5 +1,5 @@
 import {Box, Typography, useMediaQuery} from "@mui/material";
-import {theme} from "../../constants/theme.js";
+import {theme} from "../../theme/theme.js";
 
 const ArticleContainer = () => {
     const isMobile = useMediaQuery(theme.breakpoints.down('sm'));

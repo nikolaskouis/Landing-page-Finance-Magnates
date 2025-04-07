@@ -1,6 +1,6 @@
 import React from 'react';
 import { Box, Typography, Container, Grid, useMediaQuery } from '@mui/material';
-import  {theme} from "../constants/theme.js";
+import  {theme} from "../theme/theme.js";
 import FeatureItem from "../components/Items/FeatureItem.jsx";
 import {ReportButton} from "../components/Buttons/ReportButton.jsx";
 

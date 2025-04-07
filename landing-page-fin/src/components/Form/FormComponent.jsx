@@ -3,7 +3,7 @@ import FormTextField from "./FormTextField.jsx";
 import PrimaryButton from "../Buttons/PrimaryButton.jsx";
 import PrivacyText from "../Text/PrivacyText.jsx";
 import {FormContainer} from "./FormContainer.jsx";
-import {theme} from "../../constants/theme.js";
+import {theme} from "../../theme/theme.js";
 import Glow from "../Effects/Glow.jsx";
 
 const FormComponent = () => {
@@ -59,8 +59,8 @@ const FormComponent = () => {
             <PrimaryButton
                 type="submit"
                 sx={{
-                    mt: 3,
-                    width: isMobile ? '100%' : 'auto'
+                    mt: 1,
+                    width: '100%'
                 }}
             >
                 Get Free Report
@@ -69,11 +69,9 @@ const FormComponent = () => {
             <PrivacyText
                 policyLink="/privacy-policy"
                 termsLink="/terms-of-service"
-                textSize={isMobile ? 12 : 14}
+                textSize={isMobile ? 12 : 18}
                 sx={{ mt: 2 }}
             />
-            <Glow />
-
         </FormContainer>
     );
 }

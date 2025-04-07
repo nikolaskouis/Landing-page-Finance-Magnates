@@ -4,7 +4,7 @@ import { TextField, styled } from '@mui/material';
 
 //Custom TextField for the input textfields
 const StyledTextField = styled(TextField)(({ theme }) => ({
-    marginBottom: theme.spacing(3),
+    marginBottom: theme.spacing(0.5),
     '& .MuiOutlinedInput-root': {
         backgroundColor: 'transparent',
         color: '#fff',

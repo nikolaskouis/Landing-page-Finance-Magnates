@@ -10,6 +10,8 @@ const FmIntelligenceLogo = () => {
         <Box
             sx={{
                 position: 'absolute',
+                padding: "2rem",
+                zIndex: 999,
             }}
         >
             <Box
@@ -35,7 +37,7 @@ const FmIntelligenceLogo = () => {
 const Navigation = () => {
 
     return (
-        <AppBar position="static">
+        <AppBar >
             <FmIntelligenceLogo />
         </AppBar>
     );
