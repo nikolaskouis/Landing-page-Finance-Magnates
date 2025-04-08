@@ -16,8 +16,6 @@ import YouTubeIcon from '@mui/icons-material/YouTube';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import RssFeedIcon from '@mui/icons-material/RssFeed';
-import UnionLogo from '../assets/Images/Union.png';
-import Layer_1 from '../assets/Images/Layer_1.png';
 
 const Footer = () => {
     const theme = useTheme();
@@ -36,10 +34,10 @@ const Footer = () => {
                             <Grid item size={{xs: 2}}>
                                 <Stack spacing={4}>
                                     <Box>
-                                        <img src={UnionLogo} alt="fMintelligence" width="180" />
+                                        <img src="/Images/Layer_1.png" alt="fMintelligence" width="180" />
                                     </Box>
                                     <Box>
-                                        <img src={Layer_1} alt="Finance Magnates" width="180" />
+                                        <img src="/Images/Union.png" alt="Finance Magnates" width="180" />
                                     </Box>
                                 </Stack>
                             </Grid>
@@ -114,12 +112,12 @@ const Footer = () => {
                 {/* Tablet View - Image 2 */}
                 {isTablet && (
                     <>
-                        <Grid container >
+                        <Grid container spacing={3}>
                             {/* Left Column: Logo, Description and Icons */}
                             <Grid item size={{xs: 8, sm: 8}} >
                                 <Stack spacing={4}>
                                     <Box sx={{py: 3.5}}>
-                                        <img src={Layer_1} alt="fMintelligence" width="180" />
+                                        <img src="/Images/Layer_1.png" alt="fMintelligence" width="180" />
                                     </Box>
                                     <Typography
                                         variant="body1"
@@ -146,7 +144,7 @@ const Footer = () => {
                             <Grid item size={{xs: 4, sm: 4}}>
                                 <Stack spacing={4}>
                                     <Box>
-                                        <img src={UnionLogo} alt="Finance Magnates" width="180" />
+                                        <img src="/Images/Union.png" alt="Finance Magnates" width="180" />
                                     </Box>
                                     <Stack spacing={1}>
                                         {['Finance Magnates', 'Latest News', 'Directory', 'Events', 'Contact Us'].map((text) => (
@@ -197,10 +195,10 @@ const Footer = () => {
                         <Stack spacing={4}>
                             {/* Logos */}
                             <Box>
-                                <img src={Layer_1} alt="fMintelligence" width="180" />
+                                <img src="/Images/Layer_1.png" alt="fMintelligence" width="180" />
                             </Box>
                             <Box>
-                                <img src={UnionLogo} alt="Finance Magnates" width="180" />
+                                <img src="/Images/Union.png" alt="Finance Magnates" width="180" />
                             </Box>
 
                             {/* Description */}
