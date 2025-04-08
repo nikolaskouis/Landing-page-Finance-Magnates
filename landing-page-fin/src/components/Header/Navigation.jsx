@@ -1,9 +1,9 @@
 import React from 'react';
 import {
-    AppBar,
     Box,
 } from '@mui/material';
 
+import Layer_1 from '../../assets/Images/Layer_1.png';
 // Logo styles copied from figma
 const FmIntelligenceLogo = () => {
     return (
@@ -16,7 +16,7 @@ const FmIntelligenceLogo = () => {
         >
             <Box
             >
-                <img src="../../public/Images/Layer_1.png" alt="fMintelligence" width="180" />
+                <img src={Layer_1} alt="fMintelligence" width="180" />
             </Box>
         </Box>
     );

@@ -5,27 +5,27 @@ import Slider from "react-slick";
 const experts = [
     {
         name: 'Sylwester Majewski',
-        image: '../../public/Images/People/Adam Button (1) 1.png',
+        image: 'src/assets/Images/People/Adam Button (1) 1.png',
         description: `A graduate of the Warsaw School of Economics, Sylwester received an MA specializing in finance and banking. As Finance Magnates’ research associate and STA certified analyst, he leaves no stone unturned. Sylwester is the previous minority partner of an NFA registered US forex broker, and since 2003, has participated in many forex projects.`,
     },
     {
         name: 'Ramzi Ahmad',
-        image: '../../public/Images/People/Adam Button 2.png',
+        image: 'src/assets/Images/People/Adam Button 2.png\n',
         description: `With over 16 years of experience in data-driven marketing within the financial industry, Ramzi Ahmad has developed expertise across Fintech, Crypto, Payments, and Online Trading markets. He has led teams to improve efficiency and drive growth for dozens of financial brands through actionable data insights. Ramzi continues to advance his skills through courses at institutions like Harvard and Cambridge, ensuring the highest standards of data accuracy.`,
     },
     {
         name: 'Damian Chmiel',
-        image: '../../public/Images/People/Eamonn Sheridan web.png',
+        image: 'src/assets/Images/People/Eamonn Sheridan web.png',
         description: `Damian’s adventure with the financial markets began at the Cracow University of Economics, where he obtained his MA in finance and accounting. Starting from the retail trader perspective, he collaborated with brokerage houses and financial portals in Poland as an independent editor and content manager. His adventure in Finance Magnates began in 2016 where he develops as a business intelligence analyst.`,
     },
     {
         name: 'Sylwester Majewski',
-        image: '../../public/Images/People/Adam Button (1) 1.png',
+        image: 'src/assets/Images/People/Adam Button (1) 1.png',
         description: `A graduate of the Warsaw School of Economics, Sylwester received an MA specializing in finance and banking. As Finance Magnates’ research associate and STA certified analyst, he leaves no stone unturned. Sylwester is the previous minority partner of an NFA registered US forex broker, and since 2003, has participated in many forex projects.`,
     },
     {
         name: 'Nikolas Kouis',
-        image: '../../public/Images/People/1656070681842.jpg',
+        image: 'src/assets/Images/People/1656070681842.jpg',
         description: `Hi, if you are reading this, that means you tested my app. Thank you. :)`,
     },
 ];

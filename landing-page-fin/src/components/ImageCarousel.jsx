@@ -1,13 +1,13 @@
 import React from "react";
 import Slider from "react-slick";
-import {Box, Container} from "@mui/material";
+import {Box} from "@mui/material";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 const imagePaths = [
-    "../../public/Images/Carousel/Frame 13037.png",
-    "../../public/Images/Carousel/Frame 13043.png",
-    "../../public/Images/Carousel/q4_2.png",
+    "src/assets/Images/Carousel/Frame 13037.png",
+    "src/assets/Images/Carousel/Frame 13043.png",
+    "src/assets/Images/Carousel/q4_2.png",
 ];
 
 const ImageCarousel = () => {
