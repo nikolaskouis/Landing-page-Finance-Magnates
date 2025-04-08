@@ -5,9 +5,9 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 const imagePaths = [
-    "src/assets/Images/Carousel/Frame 13037.png",
-    "src/assets/Images/Carousel/Frame 13043.png",
-    "src/assets/Images/Carousel/q4_2.png",
+    "/Images/Carousel/Frame 13037.png",
+    "/Images/Carousel/Frame 13043.png",
+    "/Images/Carousel/q4_2.png",
 ];
 
 const ImageCarousel = () => {
