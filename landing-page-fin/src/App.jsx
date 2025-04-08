@@ -13,7 +13,7 @@ function App() {
 
   return (
     <ThemeProvider theme={theme}>
-        <Container fullWidth sx={{ py: 2, minWidth: "100%" }}>
+        <Container maxWidth={false} disableGutters sx={{ py: 2 }}>
             <Navigation/>
             <ComplianceSignupForm/>
             <ComplianceGuideFeatures/>

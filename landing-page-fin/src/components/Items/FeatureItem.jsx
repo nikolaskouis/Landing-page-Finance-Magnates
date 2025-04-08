@@ -11,20 +11,15 @@ const FeatureItem = ({ title, description }) => {
                 variant="h6"
                 component="h3"
                 sx={{
-                    color: 'white',
                     mb: 1.5,
-                    fontSize: isMobile ? '18px' : '20px',
-                    fontWeight: 600,
                 }}
             >
                 {title}
             </Typography>
             <Typography
-                variant="body1"
+                variant="body2"
                 sx={{
-                    color: 'rgba(255, 255, 255, 0.8)',
                     fontSize: isMobile ? '14px' : '16px',
-                    lineHeight: 1.6,
                 }}
             >
                 {description}

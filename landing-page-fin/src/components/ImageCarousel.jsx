@@ -41,12 +41,6 @@ const ImageCarousel = () => {
                         key={index}
                         sx={{
                             px: 2,
-                            transform: {    //TODO: REMOVE IF I CHANGE MY MIND
-                                xs: "rotate(0deg)",
-                                sm: index % 2 === 0 ? "rotate(-2deg)" : "rotate(2deg)",
-                                md: index % 3 === 0 ? "rotate(-5deg)" : "rotate(5deg)",
-                            },
-                            transition: "transform 0.3s ease-in-out",
                         }}
                     >
                         <Box
@@ -55,6 +49,7 @@ const ImageCarousel = () => {
                             alt={`carousel-${index}`}
                             sx={{
                                 width: "100%",
+                                height: 414, // Set fixed height
                                 borderRadius: 2,
                                 boxShadow: 3,
                             }}

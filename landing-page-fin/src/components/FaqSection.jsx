@@ -39,17 +39,14 @@ const FaqSection = () => {
                     <Grid item  size={{ xs:12, sm: 6, md:4 }} key={index}>
                         <Typography
                             variant="h6"
-                            fontWeight={600}
-                            sx={{ mb: 1, lineHeight: 1.4 }}
+                            sx={{ mb: 1, fontSize: "18px" }}
                         >
                             {faq.question}
                         </Typography>
                         <Typography
-                            variant="body1"
+                            variant="body2"
                             sx={{
-                                color: 'rgba(255, 255, 255, 0.7)',
-                                lineHeight: 1.7,
-                                fontSize: '1rem',
+                                fontSize: '18px',
                             }}
                         >
                             {faq.answer}

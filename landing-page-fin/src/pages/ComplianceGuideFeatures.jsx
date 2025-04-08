@@ -38,19 +38,20 @@ export const ComplianceGuideFeatures = () => {
 
     return (
         <Box sx={{
-            backgroundColor: '#1a1b21',
+            backgroundColor: theme.palette.background.paper,
             py: { xs: 4, sm: 6, md: 10 },
             padding: "10px",
             width: "100%",
+            zIndex: "1",
+            position: "relative",
         }}>
-            <Container sx={{ px: 0, p: "0 65px" }} maxWidth="lg">
+            <Container maxWidth={false} disableGutters sx={{ px: { xs: 2, md: 8 } }}>
                 {/* Main Heading and Description */}
                 <Box sx={{ mb: { xs: 5, md: 7 } }}>
                     <Typography
                         variant={isMobile ? "h4" : "h3"}
                         component="h1"
                         sx={{
-                            color: 'white',
                             mb: 2,
                             fontWeight: 700,
                         }}
@@ -58,13 +59,7 @@ export const ComplianceGuideFeatures = () => {
                         Your Monthly Compliance Guide
                     </Typography>
                     <Typography
-                        variant="body1"
-                        sx={{
-                            color: 'rgba(255, 255, 255, 0.8)',
-                            fontSize: isMobile ? '15px' : '16px',
-                            maxWidth: '100%',
-                            lineHeight: 1.6,
-                        }}
+                        variant="body2"
                     >
                         The Finance Magnates Compliance Industry Report provides an overview of key regulatory changes to help businesses navigate compliance challenges
                     </Typography>

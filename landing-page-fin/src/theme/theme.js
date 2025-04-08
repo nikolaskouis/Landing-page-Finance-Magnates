@@ -7,22 +7,39 @@ export const theme = createTheme({
             main: '#1967ff',
         },
         background: {
-            default: '#121418',
-            paper: '#1c1f24',
+            default: '#0A0B0D',
+            paper: '#1a1b21',
         },
         text: {
             primary: '#fff',
-            secondary: 'rgba(255, 255, 255, 0.8)',
+            secondary: '#A3A5A6',
         },
     },
     typography: {
-        fontFamily: '"Roboto", "Helvetica", "Arial", sans-serif',
+        fontFamily: 'Poppins, sans-serif',
         h2: {
-            fontWeight: 700,
-            marginBottom: '16px',
+            fontWeight: 600,
+            fontSize: '4rem',
+            lineHeight: 1.2,
+            textAlign: 'left'
+        },
+        h6: {
+            color: '#fff',
+            fontSize: '20px',
+            fontWeight: 600,
         },
         body1: {
             marginBottom: '32px',
+            fontSize: '20px',
+            lineHeight: 1.6,
+            textAlign: 'left',
+        },
+        body2: {
+            marginBottom: '32px',
+            fontSize: '20px',
+            lineHeight: 1.6,
+            textAlign: 'left',
+            color: '#A3A5A6',
         },
     },
     breakpoints: {

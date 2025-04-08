@@ -10,8 +10,9 @@ const FormComponent = () => {
     const isTablet = useMediaQuery(theme.breakpoints.between('sm', 'md'));
 
     const labelStyle = {
-        fontSize: isMobile ? 14 : 16,
+        fontSize: 16,
         fontWeight: 500,
+        color: "#A3A5A6",
         mb: 0,
         mt: 0,
     };

@@ -3,8 +3,8 @@ import {Box, styled} from "@mui/material";
 export const FormContainer = styled(Box)(({ theme }) => ({
     position: 'relative',
     zIndex: 3,
-    borderRadius: '24px !important',
-    padding: theme.spacing(4),
+    borderRadius: '16px !important',
+    padding: "48px !important",
     backgroundColor: 'rgb(26,27,33)',
     color: '#fff',
     boxShadow: '0 8px 32px rgba(0, 0, 0, 0.2)',
@@ -19,7 +19,7 @@ export const FormContainer = styled(Box)(({ theme }) => ({
         right: 0,
         bottom: 0,
         padding: '1.5px',
-        borderRadius: '25px',
+        borderRadius: '17px',
         background: 'linear-gradient(90deg, rgba(246, 243, 97, 0.6), rgba(163, 99, 255, 0.8))',
         WebkitMask:
             'linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)',

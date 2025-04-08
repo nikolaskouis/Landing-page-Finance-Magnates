@@ -54,7 +54,7 @@ const settings = {
 
 const IndustryExpertsSection = () => {
     return (
-        <Box sx={{ bgcolor: '#1a1b21', color: '#fff', py: 10, px: { xs: 3, md: 8 } }}>
+        <Box sx={{ bgcolor: '#1A1B21', color: '#fff', py: 10, px: { xs: 3, md: 8 } }}>
             <Typography
                 variant="h4"
                 fontWeight="bold"

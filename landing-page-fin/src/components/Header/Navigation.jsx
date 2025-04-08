@@ -10,25 +10,13 @@ const FmIntelligenceLogo = () => {
         <Box
             sx={{
                 position: 'absolute',
-                padding: "2rem",
+                padding: "2rem 4rem",
                 zIndex: 999,
             }}
         >
             <Box
-                sx={{
-                    width: '100%',
-                    height: '100%',
-                    color: '#FFFFFF',
-                    fontFamily: 'Inter, sans-serif',
-                    fontWeight: 500,
-                    fontSize: '24px',
-                    letterSpacing: '-0.5px',
-                    display: 'flex',
-                    alignItems: 'center'
-                }}
             >
-                <Box component="span" sx={{ fontWeight: 700 }}>fm</Box>
-                <Box component="span" sx={{ fontWeight: 300 }}>intelligence</Box>
+                <img src="../../public/Images/Layer_1.png" alt="fMintelligence" width="180" />
             </Box>
         </Box>
     );
@@ -37,9 +25,7 @@ const FmIntelligenceLogo = () => {
 const Navigation = () => {
 
     return (
-        <AppBar >
-            <FmIntelligenceLogo />
-        </AppBar>
+        <FmIntelligenceLogo />
     );
 };
 
