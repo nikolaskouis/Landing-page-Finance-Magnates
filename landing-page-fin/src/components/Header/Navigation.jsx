@@ -16,7 +16,7 @@ const FmIntelligenceLogo = () => {
         >
             <Box
             >
-                <img src="../../public/Images/Layer_1.png" alt="fMintelligence" width="180" />
+                <img src="/Images/Layer_1.png" alt="fMintelligence" width="180" />
             </Box>
         </Box>
     );
