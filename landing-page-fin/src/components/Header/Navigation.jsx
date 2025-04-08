@@ -1,8 +1,5 @@
 import React from 'react';
-import {
-    AppBar,
-    Box,
-} from '@mui/material';
+import { Box } from '@mui/material';
 
 // Logo styles copied from figma
 const FmIntelligenceLogo = () => {
