@@ -112,9 +112,9 @@ const Footer = () => {
                 {/* Tablet View - Image 2 */}
                 {isTablet && (
                     <>
-                        <Grid container spacing={10}>
+                        <Grid container >
                             {/* Left Column: Logo, Description and Icons */}
-                            <Grid item size={{xs: 8}}>
+                            <Grid item size={{xs: 8, sm: 8}} >
                                 <Stack spacing={4}>
                                     <Box sx={{py: 3.5}}>
                                         <img src="/Images/Layer_1.png" alt="fMintelligence" width="180" />
@@ -141,7 +141,7 @@ const Footer = () => {
                             </Grid>
 
                             {/* Right Column: Logo and Links */}
-                            <Grid item size={{xs: 4}}>
+                            <Grid item size={{xs: 4, sm: 4}}>
                                 <Stack spacing={4}>
                                     <Box>
                                         <img src="/Images/Union.png" alt="Finance Magnates" width="180" />

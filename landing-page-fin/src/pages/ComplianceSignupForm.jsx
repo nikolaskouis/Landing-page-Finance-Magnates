@@ -12,8 +12,6 @@ const ComplianceSignupForm = () => {
     return (
         <Box
             sx={{
-                //py: isMobile ? 4 : isTablet ? 6 : 10,
-                //px: isMobile ? 2 : 4,
                 display: 'flex',
                 alignItems: 'center',
                 position: 'relative',
@@ -33,11 +31,12 @@ const ComplianceSignupForm = () => {
                     //sx={{ maxWidth: 1200, mx: 'auto' }}
                 >
                     {/* LEFT SIDE – Title + Description */}
-                    <Grid item size={{ xs:12, sm: 12, md:6 }} maxWidth="636px">
+                    <Grid item maxWidth="636px" zIndex={2}>
                         <Typography
                             variant="h2"
                             sx={{
-                                mb: 2,
+                                p: (isMobile) ? '2rem' : '1rem',
+                                fontSize: (isMobile) ? '2.5rem' : '4rem',
                             }}
                         >
                             Stay Informed.<br />Stay Compliant.
@@ -46,18 +45,16 @@ const ComplianceSignupForm = () => {
                         <Typography
                             variant="body1"
                             sx={{
-                                mb: 4,
+                                p: (isMobile) ? '2rem' : '1rem',
                             }}
                         >
                             Sign up to access the latest Insights on Regulatory Highlights, Recent Developments, and Future Outlook—all in one monthly report.
                         </Typography>
                     </Grid>
-
+                    <Glow transform="translate(30%, -55%)" zIndex={0} />
+                    <Glow transform="translate(80%, 90%)" zIndex={0} />
                     {/* RIGHT SIDE – Form */}
                     <Grid>
-                        <Glow transform="translate(-20%, 10%)" zIndex={0} />
-                        <Glow transform="translate(50%, 150%)" zIndex={0} />
-
                         {/* Form box */}
                         <Box
                             sx={{

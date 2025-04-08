@@ -20,6 +20,7 @@ const faqs = [
 ];
 
 const FaqSection = () => {
+    const isSingle = faqs.length === 1;
     return (
         <Box sx={{ bgcolor: '#121212', color: '#fff', py: 10, px: { xs: 3, md: 8 } }}>
             <Typography
@@ -35,8 +36,13 @@ const FaqSection = () => {
             </Typography>
 
             <Grid container spacing={4}>
-                {faqs.map((faq, index) => (
-                    <Grid item  size={{ xs:12, sm: 6, md:4 }} key={index}>
+                {faqs.map((faq, index) => {
+                    const isLast = index === faqs.length - 1;
+                    const isOdd = faqs.length % 2 !== 0;
+                    const makeFullWidth = isLast && isOdd;
+
+                    return (
+                        <Grid item  size={{ xs:12, sm:(makeFullWidth  ? 12 : 6), md:4 }} key={index}>
                         <Typography
                             variant="h6"
                             sx={{ mb: 1, fontSize: "18px" }}
@@ -52,7 +58,8 @@ const FaqSection = () => {
                             {faq.answer}
                         </Typography>
                     </Grid>
-                ))}
+                    );
+                })}
             </Grid>
         </Box>
     );

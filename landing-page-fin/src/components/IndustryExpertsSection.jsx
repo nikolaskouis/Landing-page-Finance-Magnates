@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Typography, Grid, Card, CardContent, CardMedia } from '@mui/material';
+import {Box, Typography, Card, CardContent, CardMedia, useTheme} from '@mui/material';
 import Slider from "react-slick";
 
 const experts = [
@@ -24,35 +24,60 @@ const experts = [
         description: `A graduate of the Warsaw School of Economics, Sylwester received an MA specializing in finance and banking. As Finance Magnates’ research associate and STA certified analyst, he leaves no stone unturned. Sylwester is the previous minority partner of an NFA registered US forex broker, and since 2003, has participated in many forex projects.`,
     },
     {
-        name: 'Damian Chmiel',
-        image: '../../public/Images/People/Eamonn Sheridan web.png',
-        description: `Damian’s adventure with the financial markets began at the Cracow University of Economics, where he obtained his MA in finance and accounting. Starting from the retail trader perspective, he collaborated with brokerage houses and financial portals in Poland as an independent editor and content manager. His adventure in Finance Magnates began in 2016 where he develops as a business intelligence analyst.`,
+        name: 'Nikolas Kouis',
+        image: '../../public/Images/People/1656070681842.jpg',
+        description: `Hi, if you are reading this, that means you tested my app. Thank you. :)`,
     },
 ];
 
-const settings = {
-    dots: true,
-    speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 3,
-    arrows: false,
-    responsive: [
-        {
-            breakpoint: 1024, // tablet
-            settings: {
-                slidesToShow: 2,
-            },
-        },
-        {
-            breakpoint: 600, // mobile
-            settings: {
-                slidesToShow: 1,
-            },
-        },
-    ],
-};
-
 const IndustryExpertsSection = () => {
+
+    const theme = useTheme();
+
+    const settings = {
+        dots: true,
+        speed: 500,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        arrows: false,
+        responsive: [
+            {
+                breakpoint: theme.breakpoints.values.lg,
+                settings: {
+                    slidesToShow: 2,
+                },
+            },
+            {
+                breakpoint: theme.breakpoints.values.md,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                    centerMode: true,
+                    centerPadding: '0px',
+                },
+            },
+            {
+                breakpoint: theme.breakpoints.values.sm + 100,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    centerMode: true,
+                    centerPadding: '0px',
+                },
+            },
+            {
+                breakpoint: theme.breakpoints.values.xs,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    centerMode: true,
+                    centerPadding: '0px',
+                },
+            },
+        ],
+    };
+
+
     return (
         <Box sx={{ bgcolor: '#1A1B21', color: '#fff', py: 10, px: { xs: 3, md: 8 } }}>
             <Typography
@@ -80,7 +105,11 @@ const IndustryExpertsSection = () => {
             <Slider {...settings}>
 
                 {experts.map((expert, index) => (
-                    <Grid item  size={{ xs:12, sm: 6, md:4 }} key={index}>
+                    <Box
+                        key={index}
+                        display="flex"
+                        justifyContent="center"
+                    >
                         <Card
                             sx={{
                                 bgcolor: '#0a0b0d',
@@ -103,7 +132,7 @@ const IndustryExpertsSection = () => {
                                 sx={{
                                     objectFit: 'cover',
                                     filter: 'grayscale(100%)',
-                                    borderRadius: "15px",
+                                    borderRadius: "35px",
                                     padding: "24px",
                                     width: 'auto',
                                 }}
@@ -131,7 +160,7 @@ const IndustryExpertsSection = () => {
                                 </Typography>
                             </CardContent>
                         </Card>
-                    </Grid>
+                    </Box>
                 ))}
 
             </Slider>

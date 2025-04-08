@@ -54,12 +54,14 @@ export const ComplianceGuideFeatures = () => {
                         sx={{
                             mb: 2,
                             fontWeight: 700,
+                            fontSize: isMobile ? "1.5rem" : "24px",
                         }}
                     >
                         Your Monthly Compliance Guide
                     </Typography>
                     <Typography
                         variant="body2"
+                        fontSize={isMobile ? "1rem" : "18px"}
                     >
                         The Finance Magnates Compliance Industry Report provides an overview of key regulatory changes to help businesses navigate compliance challenges
                     </Typography>
