@@ -1,6 +1,6 @@
 import React from "react";
 import Slider from "react-slick";
-import {Box} from "@mui/material";
+import {Box, useTheme} from "@mui/material";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
@@ -11,6 +11,8 @@ const imagePaths = [
 ];
 
 const ImageCarousel = () => {
+    const theme = useTheme();
+
     const settings = {
         infinite: true,
         speed: 500,
@@ -19,13 +21,19 @@ const ImageCarousel = () => {
         arrows: false,
         responsive: [
             {
-                breakpoint: 1024, // tablet
+                breakpoint: theme.breakpoints.values.lg, // tablet
                 settings: {
                     slidesToShow: 2,
                 },
             },
             {
-                breakpoint: 600, // mobile
+                breakpoint: theme.breakpoints.values.md, // tablet
+                settings: {
+                    slidesToShow: 2,
+                },
+            },
+            {
+                breakpoint: theme.breakpoints.values.sm, // mobile
                 settings: {
                     slidesToShow: 1,
                 },
@@ -49,7 +57,7 @@ const ImageCarousel = () => {
                             alt={`carousel-${index}`}
                             sx={{
                                 width: "100%",
-                                height: 414, // Set fixed height
+                                height: "414px", // Set fixed height
                                 borderRadius: 2,
                                 boxShadow: 3,
                             }}

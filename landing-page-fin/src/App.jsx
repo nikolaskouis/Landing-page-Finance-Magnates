@@ -4,10 +4,10 @@ import ComplianceGuideFeatures from "./pages/ComplianceGuideFeatures.jsx";
 import {Container, ThemeProvider} from "@mui/material";
 import {theme} from "./theme/theme.js";
 import Navigation from "./components/Header/Navigation.jsx";
-import ImageCarousel from "./components/ImageCarousel.jsx";
-import FaqSection from "./components/FaqSection.jsx";
-import IndustryExpertsSection from "./components/IndustryExpertsSection.jsx";
-import Footer from "./components/Footer.jsx";
+import ImageCarousel from "./pages/ImageCarousel.jsx";
+import FaqSection from "./pages/FaqSection.jsx";
+import IndustryExpertsSection from "./pages/IndustryExpertsSection.jsx";
+import Footer from "./pages/Footer.jsx";
 
 function App() {
 
